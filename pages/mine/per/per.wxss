@@ -1,0 +1,244 @@
+/* pages/mine/per/per.wxss */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffba5e), color-stop(1, #ffd22b));
+}
+
+.header view {
+  float: left;
+  margin-left: 10rpx;
+}
+
+.header image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+
+.header .logout {
+  float: right;
+  margin-right: 10rpx;
+}
+
+/*  */
+
+.user-info {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 184rpx;
+  background: #ffd22b;
+}
+
+.user {
+  width: 60%;
+  /* margin-left: 50rpx; */
+  height: 154rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.user-image {
+  width: 150rpx;
+  height: 150rpx;
+  /* float: left; */
+}
+
+.user-name {
+  /* float: left; */
+  /* margin-left: 40rpx; */
+}
+.nickName {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  -webkit-margin-before: 0.4em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0rpx;
+  -webkit-margin-end: 0rpx;
+}
+
+.userId {
+  font-size: 0.8em;
+  display: block;
+  -webkit-margin-before: 0.4em;
+  -webkit-margin-after: 0.3em;
+  -webkit-margin-start: 0rpx;
+  -webkit-margin-end: 0rpx;
+}
+
+.user-image image {
+  width: 140rpx;
+  height: 140rpx;
+  /* border: 5rpx #f4f4f4 solid; */
+  border-radius: 200rpx;
+  box-shadow: 0 0 100rpx rgb(219, 127, 7);
+}
+
+/* weui */
+.weui-cells {
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #fff;
+  line-height: 1.41176471;
+  font-size: 1em;
+}
+
+.weui-cells:before {
+  top: 0;
+   border-top: 1rpx solid #EEEEEE; 
+}
+
+.weui-cells:after, .weui-cells:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #EEEEEE;
+}
+
+.weui-cells:after {
+  bottom: 0;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+
+.weui-cells__title {
+  margin-top: 0.77em;
+  margin-bottom: 0.3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999;
+  font-size: 14px;
+}
+
+.weui-cells_after-title {
+  margin-top: 0;
+}
+
+.weui-cells__tips {
+  margin-top: 0.3em;
+  color: #999;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.weui-cells__title {
+  margin-top: 0.77em;
+  margin-bottom: 0.3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999;
+  font-size: 14px;
+}
+
+.weui-cell {
+  padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.weui-cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  left: 15px;
+}
+
+.weui-cell:first-child:before {
+  display: none;
+}
+
+.weui-cell_active {
+  background-color: #ececec;
+}
+
+.weui-cell_primary {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.weui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.weui-cell__ft {
+  text-align: right;
+  color: #999;
+}
+
+.weui-cell_access {
+  color: inherit;
+}
+
+.weui-cell__ft_in-access {
+  padding-right: 13px;
+  position: relative;
+}
+
+.weui-cell__ft_in-access:after {
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  position: relative;
+  top: -2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 2px;
+}
+
+.weui-cell_link {
+  color: #586c94;
+  font-size: 14px;
+}
+
+.weui-cell_link:active {
+  background-color: #ececec;
+}
+
+.weui-cell_link:first-child:before {
+  display: block;
+}
+.weui-icon-radio {
+  margin-left: 3.2px;
+  margin-right: 3.2px;
+}
+
+.weui-icon-checkbox_circle, .weui-icon-checkbox_success {
+  margin-left: 4.6px;
+  margin-right: 4.6px;
+}
+
+.weui-check__label:active {
+  background-color: #ececec;
+}

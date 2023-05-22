@@ -1,0 +1,45 @@
+<!--pages/mine/per/updateinfo/updateinfo.wxml-->
+<view class='container'>
+  <!-- title -->
+  <view class='header'>
+
+    <view bindtap='backePage'>
+      取消
+    </view>
+
+    <button class='logout' bindtap='save' disabled='{{disabled}}'>
+      {{time}}
+    </button>
+  </view>
+
+  <view class='box'>
+    <input type='number' placeholder='{{seller_phone}}' bindinput='phoneChange'></input>
+  </view>
+
+
+  <!-- 弹框 -->
+  <view class='toast-box' hidden='{{!isHiden}}'>
+    <view class='toastbg'></view>
+    <view class='showToast'>
+      <view class='toast-title'>
+        <text>验证码</text>
+      </view>
+      <view class='toast-main'>
+        <view class='input-title' wx:if='{{error}}'>
+          <text>{{error}}</text>
+        </view>
+        <view class='toast-input'>
+          <input placeholder='请输入验证码' type='number' bindinput='codeChange'></input>
+        </view>
+      </view>
+      <view class='toast-button'>
+        <view class='button1'>
+          <button catchtap='cancel'>取消</button>
+        </view>
+        <view class='button2'>
+          <button catchtap='confirm'>确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

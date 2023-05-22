@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "listmessage-cmp": "/components/listmessage/listmessage"
+  }
+}

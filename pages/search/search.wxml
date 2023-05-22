@@ -1,0 +1,39 @@
+
+<!-- 搜索页面 -->
+
+<view class="container">
+  <view class="section">
+    <view class="section_img">
+      <image src="/images/l_search.png"></image>
+    </view>
+    <input placeholder="请输入机型名称" focus="{{focus}}" bindinput="getkey" confirm-type="search" value="{{prikey}}" />
+  </view>
+
+  <view wx:if="{{prikey!=''&&searchArray.length>0}}" class="selectArr">
+    <block wx:for="{{searchArray}}" wx:key="item">
+      <view bindtap="enterFun" data-variable="{{item}}" class="selectItem">
+        {{item.version_name}}
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{prikey!=''&& searchArray.length==0}}" class="selectArr">
+    <view class="selectItem" style="color:#808080">
+      暂无数据~
+    </view>
+  </view>
+
+  <view class="section2" wx:if="{{latestArray.length>0}}">
+    <view class="first_bank">
+      <text style="font-weight: bold;">历史搜索</text>
+      <view style="color:#696969;font-size:28rpx;font-weight: bold;" bindtap="clearHisStor">清空</view>
+    </view>
+    <view wx:if="{{latestArray.length>0}}" class="his">
+      <block wx:for="{{latestArray}}" wx:key="item">
+        <view bindtap="getSearchKeyByHis" data-variable="{{item}}" class="hisItem">
+          {{item.version_name}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,3 @@
+<!--components/webviewpage/webviewpage.wxml-->
+<!-- 网页跳转转发 -->
+<web-view src="{{paramUrl}}"></web-view>

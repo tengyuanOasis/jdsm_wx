@@ -1,0 +1,29 @@
+
+<view class="container test">
+  <view class="title">
+      <text>{{name}}-验机报告</text>
+  </view>
+  <view>
+    <view class="r-box">
+      <view class="r-title">
+        <text>验机结果</text>
+      </view>
+      <view class="r-c">
+        <view class="r-c-i" wx:for="{{main_data}}" wx:for-item="item" data-img="{{item.test_img}}" bindtap="checkImage">
+          <text style="color:#212123">{{item.feature_name}}：</text>
+          <text style="color:#999999">{{item.option_name}}</text> 
+          <text style=" color:#00935F;margin-left:20rpx;"   wx:if="{{item.isPass}}">通过</text>
+          <text style=" color:#FA6334;margin-left:20rpx;"  wx:else>未通过</text>
+          <image wx:if="{{item.isPass}}"  src="/images/x2.png"/>
+          <image wx:else  src="/images/x1.png"/>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+  <view class="tip">
+    <text>如有问题请联系客服，点击单列可查看图片</text>
+  </view>
+</view>
+<!-- 提示 -->
+<template is="UI-toast" data="{{ toastShow:toastShow, title: title }}"></template>

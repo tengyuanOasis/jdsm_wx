@@ -1,0 +1,222 @@
+page{
+  background: white;
+}
+.container {
+  width: 100%;
+  /* height: 300rpx; */
+  margin-top: 100rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.info-list {
+  /* background-color: rgb(16, 163, 119); */
+  height: 100%;
+}
+
+.blankBlock {
+  height: 50px;
+  color: white;
+  background-color: rgb(240, 240, 240);
+  opacity: 0.1;
+}
+
+.title-line {
+  margin-left: 5%;
+  width: 90%;
+  color: #000;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-info:first-child{
+  margin-top:80rpx;
+}
+
+.count-title-left {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.feature-name {
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.press-tips {
+  font-size: 24rpx;
+  color: #ffb632;
+}
+
+.qst-btn {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.child-qst-btn {
+  position: absolute;
+  bottom: 1rpx;
+  right: 1rpx;
+  width: 25rpx;
+  height: 25rpx;
+  padding: 5rpx;
+}
+
+.feature-child-box {
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  height: auto;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  /* box-shadow: 0px 2rpx 6rpx #f1f1f1; */
+  width: 90%;
+  margin: auto;
+}
+
+.feature-child {
+  font-weight: normal;
+  color: #666;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  /* padding-left: 10rpx;
+  padding-right: 10rpx; */
+  text-align: left;
+  display: block;
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-top: 20rpx;
+  overflow: hidden;
+  position: relative;
+  font-size: 25rpx;
+  border-radius: 15rpx;
+}
+
+.count_btn {
+  margin-top: 60rpx;
+  margin-left: 15%;
+  padding: 25rpx;
+  height: auto;
+  background-image: linear-gradient(90deg, #89C7F9, #4BA7EC);
+  color: white;
+  font-size: 30rpx;
+  width: 70%;
+  border-radius: 40rpx;
+}
+
+.count-select {
+  /* border: 1rpx solid #40AE87; */
+  background: #E4E6F1;
+}
+
+.topTitleName {
+  font-weight: bolder;
+}
+
+.hiden-Ele {
+  display: none;
+}
+
+.step-line {
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  /* padding: 5rpx !important; */
+  position: fixed !important;
+  font-size: 24rpx;
+  z-index: 99;
+  margin-top: 8rpx;
+}
+
+.step-line-bg {
+  left: 0;
+  right: 0;
+  max-width: 768px;
+  /* margin: 0 auto; */
+  background-image: linear-gradient(90deg, #4BA7EC, #D098FF);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 96;
+  height: 35rpx;
+  position: fixed !important;
+  /* border-radius: 0 12px 12px 0; */
+  padding-top: 3rpx;
+  padding-bottom: 3rpx;
+}
+
+/* 弹出层样式------------------ */
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalBox {
+  width: 630rpx;
+  height: 670rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -345rpx 60rpx;
+  background-color: #fff;
+  /* border-radius: 30rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demoImg {
+  width: 550rpx;
+  /* height: 450rpx; */
+  margin-top: 80rpx;
+}
+
+.outImg {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: -15rpx;
+  top: -15rpx;
+}
+
+.myModal-title {
+  padding-top: 32rpx;
+  font-size: 30rpx;
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  background-color: #89C7F9;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.closeModalBtn {
+  margin-top: 50rpx;
+  color: rgb(252, 145, 83);
+  font-size: 30rpx;
+}
+
+.explain {
+  font-size: 26rpx;
+  padding: 15rpx;
+  color: rgb(143, 115, 76);
+  padding-top: 30rpx;
+}
+
+/* /弹出层样式------------------ */

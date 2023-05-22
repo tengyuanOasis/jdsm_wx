@@ -1,0 +1,58 @@
+<view class="container">
+  <view class="title">
+    <text>物流信息</text>
+  </view>
+  <view class="content">
+    <view class="express" wx:if="{{routeList.length>0}}">
+      <view class="express-num">
+        <text>快递类型：{{expressCompany}}</text>
+      </view>
+      <view class="express-num">
+        <text>快递单号：{{expressNum}}</text>
+      </view>
+    </view>
+    <view wx:if="{{routeList.length>0}}" class="main-container">
+      <block wx:for="{{routeList}}" wx:key="key" wx:for-index="index">
+        <view class="item">
+          <view wx:if="{{index==0}}" style="height:220%;" class="item-one item-one1" >
+            <view>
+              <image src="/images/e1.png"></image>
+            </view>
+          </view>
+          <view wx:elif="{{index!=routeList.length-1}}" style="height:150%;" class="item-one">
+            <view>
+              <image src="/images/e2.png"></image>
+            </view>
+          </view>
+          <view wx:elif="{{index==routeList.length-1}}" style="height:100%;" class="item-one">
+            <view>
+              <image src="/images/e2.png"></image>
+            </view>
+          </view>
+          <view wx:if="{{index==0}}" class="item-two item-two1">
+            <view class="route-title">
+              <text>{{item.day}} {{item.time}} {{item.week}}</text>
+            </view>
+            <view class="route-content">
+              <text>【{{item.accept_address}}】 {{item.remark}}</text>
+            </view>
+          </view>
+          <view wx:else class="item-two">
+            <view class="route-title">
+              <text>{{item.day}} {{item.time}} {{item.week}}</text>
+            </view>
+            <view  class="route-content">
+              <text>【{{item.accept_address}}】 {{item.remark}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view style="height:100rpx;">
+    
+  </view>
+  <view wx:if="{{routeList.length<=0}}">
+    <text style="color:red;display:inline-block;margin-left:40rpx;">暂无相关物流信息！</text>
+  </view>
+</view>

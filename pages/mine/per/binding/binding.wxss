@@ -1,0 +1,117 @@
+/* pages/mine/per/binding/binding.wxss */
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffba5e), color-stop(1, #ffd22b));
+}
+
+.header view {
+  float: left;
+  margin-left: 10rpx;
+}
+
+.header image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+
+.header .logout {
+  float: right;
+  margin-right: 10rpx;
+}
+
+/*  */
+
+.user-info {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 184rpx;
+  background: #ffd22b;
+}
+
+.user-image {
+  width: 170rpx;
+  height: 170rpx;
+  margin: auto;
+}
+
+.user-image image {
+  width: 100%;
+  height: 100%;
+}
+
+.bind-main {
+  width: 100%;
+  height: auto;
+}
+
+.bind-main .box {
+  position: relative;
+  height: 100rpx;
+  margin: 50rpx 0;
+  background: white;
+  padding: 0 3%;
+  overflow: hidden;
+}
+
+.bind-main-l {
+  margin-top: 20rpx !important;
+}
+
+.box text {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  left: 3%;
+  line-height: 100rpx;
+}
+
+.box input {
+  width: 78%;
+  height: 100%;
+  padding: 0 3%;
+  border: none;
+  text-indent: 1.5rem;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font: inherit;
+  margin-left: 18%;
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+}
+
+.bind-main-l input {
+  width: 45% !important;
+}
+
+.bind-main .box .code {
+  position: absolute;
+  left: 65%;
+  background-color: #ffd22b;
+  padding: 0rpx 15rpx;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  line-height: 100rpx;
+}
+
+.userBind button{
+  width: 80%;
+  height: 3em;
+  line-height: 3em;
+  background-color: #ffd22b;
+  margin: auto;
+}

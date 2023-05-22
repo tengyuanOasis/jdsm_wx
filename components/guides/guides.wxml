@@ -1,0 +1,38 @@
+<!--components/guides/guides.wxml-->
+<!-- 首页回收指引 -->
+<!-- <listmessage-cmp tipclass="bgs">
+  <text slot="before" style="font-size: 35rpx;font-weight:bold;position:absolute;left:5%">回收流程</text>
+  <navigator slot="after" url="/pages/questionguide/questionguide" style="color:#000;font-size:24rpx;font-weight:bold" bindtap="clearBrand">Q&A</navigator>
+</listmessage-cmp> -->
+
+<view class="tx">
+	<view class="tx-tx">
+		回收流程
+	</view>
+</view>
+
+<view class="container">
+	<view class="onetap">
+		<image src="/images/sj.png" style="width:55rpx;height:55rpx" />
+		<text>选择机器</text>
+	</view>
+
+	<view class="onetap">
+		<image src="/images/jsq.png" style="width:55rpx;height:55rpx" />
+		<text>机况估价</text>
+	</view>
+
+	<view class="onetap">
+		<image src="/images/bg.png" style="width:55rpx;height:55rpx" />
+		<text>下单发货</text>
+	</view>
+
+	<view class="onetap">
+		<image src="/images/zz.png" style="width:55rpx;height:55rpx" />
+		<text>验货打款</text>
+	</view>
+
+</view>
+<!-- <view class="promisecl">
+  <image src="./images/promise.jpg" style="width:88%;height:260rpx;" />
+</view> -->

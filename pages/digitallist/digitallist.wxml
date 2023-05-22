@@ -1,0 +1,25 @@
+<view style="height:30rpx">
+
+</view>
+
+<!--搜索框-->
+<view class="searchctl"  bindtap="toKeySearch">
+  <image src="/images/l_search.png" style="width:30rpx;height:30rpx;margin-right:20rpx"></image>
+  <text>搜索你想要回收的产品型号</text>
+</view>
+
+<view class="container-ex">
+  <view class="navigation">
+    <view>智能数码</view>
+  </view>
+  <view class="main-content">
+    <block wx:for="{{digitalList}}" wx:key="versionId">
+      <view style="position:relative" data-version-id="{{item.versionId}}"  bindtap="gotoCountPrice">
+        <image src="{{domain+item.img}}"></image>
+        <text>{{item.versionName}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+<kefu-cmp></kefu-cmp>

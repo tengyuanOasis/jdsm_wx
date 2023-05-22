@@ -1,0 +1,365 @@
+/* pages/placeorderpage/placeorderpage.wxss */
+
+input {
+  width: 376rpx;
+  background-color: #f5f5f5;
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.container {
+  margin-top: 100rpx;
+  background-color: #F7F6FB;
+}
+
+.chose-box {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /* padding: 20rpx; */
+  padding-top: 20rpx;
+}
+
+.img1 {
+  width: 400rpx;
+}
+
+.img1 image {
+  width: 200rpx;
+  height: 180rpx;
+}
+
+/**表单部分样式开始**/
+
+.container .formClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+  color: #333;
+}
+.container .formClass .order-box input{
+  background-color: white;
+}
+.formClass .order-box{
+  width: 94%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40rpx;
+  background-color: white;
+  border-radius:20rpx; 
+  margin-bottom: 20rpx;
+  min-height: 500rpx;
+}
+.single-input {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center;
+  padding: 20rpx;
+  margin-top: 10rpx;
+  border-bottom: #F1F1F1 2rpx solid;
+}
+
+.j-address input {
+  color: #999;
+}
+
+
+
+.formClass .j-province-city-county .picker {
+  width: 480rpx;
+  position: relative;
+}
+
+.j-province-city-county .picker image {
+  position: absolute;
+  right: 10rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.formClass .j-phone {
+  background-color: #f1f1f1;
+}
+
+/**表单部分样式结束**/
+
+.count_btn {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+  padding:  30rpx 20rpx;
+  background-image: linear-gradient(to right, #409ee6 ,#4BA7EC);
+  color: white;
+  font-size: 27rpx;
+  border-radius: 30rpx;
+
+}
+
+.count_btn_fake {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+  padding: 30rpx 20rpx;
+  background-color: #c9c9c9;
+  color: white;
+  font-size: 27rpx;
+  border-radius: 30rpx;
+}
+
+.placeholderStyle {
+  font-size: 24rpx;
+  color: #c5c5c5;
+}
+
+.picker {
+  font-size: 26rpx;
+  color: rgb(65, 192, 122);
+  margin-left: 25rpx;
+}
+
+.section radio-group {
+  /* margin-top: 25rpx; */
+  margin-left: 25rpx;
+}
+
+
+
+.codeTipsBox {
+  width: 94%;
+  margin-top: 10rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white !important;
+  height: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.deal-way {
+  margin-left: 17rpx;
+  font-size: 26rpx;
+  color: #5a4a39;
+  font-weight: bolder;
+}
+
+.askImg {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.codeTipsText {
+  /* margin-top: -30rpx !important; */
+  /* width: 80%; */
+  padding: 10rpx;
+  /* background-color: #fbfbfb !important; */
+  color: #FA6334;
+  font-size: 26rpx;
+  background-color: white;
+}
+
+.recycleTips {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a3a29e;
+  font-size: 26rpx;
+  padding: 20rpx;
+}
+
+.attention {
+  font-size: 32rpx;
+  color:#212123;
+  font-weight: bold;
+  margin-top:30rpx;
+  margin-bottom: 30rpx; 
+}
+
+.littleTips {
+  font-size: 32rpx;
+  color:#212123;
+  font-weight: bold;
+  margin-top:30rpx;
+  margin-bottom: 30rpx; 
+}
+
+.recycleTips view {
+  padding: 8rpx;
+}
+
+.title-line {
+  display: block;
+  position: relative;
+  width: 90%;
+  text-align: left;
+  color: #000;
+  float: left;
+  padding-left: 20rpx;
+  margin-top: 40rpx;
+  border-left: 14rpx solid #ffd22b;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  margin: 10rpx 0;
+  margin-bottom: 10rpx;
+}
+
+.count-title-left {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.featrue-name {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+#myMap {
+  /* position: absolute; */
+  margin: 0 auto;
+  width: 95%;
+  height: 100rpx;
+  margin-top: 50rpx;
+}
+
+.recycleTips2 {
+  margin-top: 100rpx;
+}
+
+.normalQ {
+  font-size: 32rpx;
+  color:#4BA7EC;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 100rpx;
+}
+
+.getCodeBtn {
+  width: 160rpx;
+  padding: 18rpx 15rpx;
+  color:#FCB501;
+  font-size: 23rpx;
+  border-radius: 120rpx;
+  margin-left: 20rpx;
+  border: #FCB501 solid 2rpx;
+}
+
+.codeInput {
+  width: 190rpx !important;
+}
+
+/* 弹出层样式------------------ */
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalBox {
+  width: 630rpx;
+  height: 670rpx;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  margin: -345rpx 60rpx;
+  background-color: #fff;
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demoImg {
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.outImg {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: -15rpx;
+  top: -15rpx;
+}
+
+.myModal-title {
+  padding-top: 25rpx;
+  font-size: 40rpx;
+  position: relative;
+  height: 80rpx;
+  width: 100%;
+  background-color: rgb(252, 207, 83);
+  text-align: center;
+  font-weight: bold;
+}
+
+.closeModalBtn {
+  margin-top: 50rpx;
+  color: rgb(252, 145, 83);
+  font-size: 30rpx;
+}
+
+.explain {
+  font-size: 26rpx;
+  padding: 15rpx;
+  color: rgb(143, 115, 76);
+}
+
+/* /弹出层样式------------------ */
+
+.single-input text {
+  font-size: 26rpx;
+  color: #5a4a39;
+  font-weight: bolder;
+  min-width: 170rpx;
+}
+
+.agreeRules {
+  
+  display: flex;
+  /* height: 100rpx; */
+  width: 54%;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  font-size: 25rpx;
+  color: gray;
+  margin-top: 30rpx;
+}
+
+.agreeRules image {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.agreeRules navigator {
+  color: #999999;
+}

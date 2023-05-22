@@ -1,0 +1,184 @@
+<!--我的-->
+<view class='container'>
+
+	<dialog id='dialog' title='{{error.title}}' content='{{error.msg}}' cancelText='{{error.cancel}}' confirmText='{{error.confirm}}' contact='{{error.contact}}' bind:hide='hideDialog' bind:cancelEvent="notAgreedToCancel" bind:confirmEvent="notAgreedToConfirm">
+	</dialog>
+
+
+	<dialog id='dialogSendOut' title='{{error1.title}}' content='{{error1.msg}}' cancelText='{{error1.cancel}}' confirmText='{{error1.confirm}}' bind:hide='hideDialogSendOut' bind:cancelEvent="toSend" bind:confirmEvent="theDoorToTake">
+	</dialog>
+	<dialog id='action' title='{{error3.title}}' content='{{error3.msg}}' cancelText='{{error3.cancel}}' confirmText='{{error3.confirm}}'>
+	</dialog>
+
+	<!-- 用户信息栏 -->
+  <view class="user-info" >
+  <view style="width: 100%;height: 100%;z-index: 1;"></view>
+    <view wx:if="{{!hasUserInfo && canIUse}}" class="user">
+      <!-- 未授权 -->
+      <!-- 头像 -->
+      <view class="user-image">
+        <image src="/images/peishi.jpg"></image>
+      </view>
+      <!-- 用户信息 -->
+      <view class="user-name">
+        <view class="nickName">
+          <text>{{phoneNumber?phoneNumber:""}}</text>
+        </view>
+        <view class="userId">
+          <!--<text>我的电话</text> -->
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{!userInfo1}}" class="user">
+      <!-- 已授权 -->
+      <!-- 头像 -->
+      <view class="user-image">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+          <image src="{{avatarUrl}}"></image>
+        </button> 
+      </view>
+      <!-- 用户信息 -->
+      <view class="user-name">
+        <view class="nickName">
+          <text>{{phoneNumber?phoneNumber:""}}</text>
+        </view>
+        <view class="userId">
+          <!--<text>我的电话</text> -->
+        </view>
+      </view>
+    </view>
+  
+  </view>
+ 
+  <!-- 近期订单 -->
+  <view class="recent-order">
+   
+    <!-- 标题 -->
+    <view class="order-title">
+      <text>我的订单</text>
+    </view>
+    <!-- 订单列表 -->
+    <view class="order-list">
+      <!-- 没有订单 -->
+      <view class="order-null" wx:if="{{recentOrders.length==0}}">
+        <view wx:if="{{recentOrders.length==0 && !dataLoad}}">
+          <view class="order-gg">
+            <text>一个订单也没有</text>
+          </view>
+        </view>
+        <view wx:else>
+          <image src="/images/dataload.gif"></image>
+        </view>
+      </view>
+      <!-- 有订单 -->
+      <view wx:else>
+        <view class="order-has" wx:for="{{recentOrders}}" wx:for-item="order" wx:key="urOrder">
+          <!-- 1 -->
+          <view class="order-title1">
+            <!-- 订单号 -->
+            <view class="order-number">
+              <text>订单号：</text>
+              <text class="text-number">{{order.order_number}}</text>
+            </view>
+            <!-- 订单状态 -->
+            <view class="order-status">
+              <text wx:if="{{order.order_status=='waitdelivery'}}">等待发货</text>
+              <text wx:elif="{{order.order_status=='cancel'}}">已取消</text>
+              <text wx:elif="{{order.order_status=='delivered'}}">已发货</text>
+              <text wx:elif="{{order.order_status=='Receiving'}}">已收货，正在验机</text>
+              <text wx:elif="{{order.order_status=='check'}}">已收货，正在验机</text>
+              <text wx:elif="{{order.order_status=='remit'}}">等待打款</text>
+              <text wx:elif="{{order.order_status=='successfully'}}">交易成功</text>
+              <text wx:else>交易失败</text>
+            </view>
+          </view>
+          <!--  2-->
+          <view class="order-main">
+            <!-- 机器图片 -->
+            <image src="{{domain}}{{order.img}}"></image>
+            <!-- 机器简介 -->
+            <view class="version-intro">
+              <view class="version-title">
+                <text>{{order.version_name}}</text>
+              </view>
+              <view class="version-deatil">
+                <text>规格:</text>
+                <text wx:for="{{order.phone_info}}" wx:for-item="it" wx:key="orderInfo" wx:index="index" wx:if="{{index<5}}"> {{it.option_name}}</text>
+              </view>
+              <view class="order-other" wx:if="{{order.secondary_recycle!=0}}">
+                <text class="order-other-3">二次报价：</text>
+                <text class="order-other-2">￥</text>
+                <text class="order-other-1">{{order.secondary_recycle}}.00</text>
+              </view>
+              <view class="order-other" wx:else>
+                <text class="order-other-3">回收价：</text>
+                <text class="order-other-2">￥</text>
+                <text class="order-other-1">{{order.recycle_money}}.00</text>
+              </view>
+            </view>
+          </view>
+          <!--  3-->
+          <!-- <view class="order-other" wx:if="{{order.secondary_recycle!=0}}">
+            <text class="order-other-1">{{order.secondary_recycle}}.00</text>
+            <text class="order-other-2">￥</text>
+            <text class="order-other-3">二次报价：</text>
+          </view>
+          <view class="order-other" wx:else>
+            <text class="order-other-1">{{order.recycle_money}}.00</text>
+            <text class="order-other-2">￥</text>
+            <text class="order-other-3">回收价：</text>
+          </view> -->
+          <!--  4-->
+          <view class="order-button">
+            <view data-url="orderdetails/orderdetail" data-order="{{order}}" class="order-button-deatil button-view" bindtap="toOrderDetail">
+              查看详情
+            </view>
+            <view wx:if="{{order.is_agree_price=='isagree'  && order.order_status!='successfully' && order.order_status!='unsuccessful'}}">
+              <view class="button-view" bindtap="yesAgreedTo" data-ordernumber="{{order.order_number}}">
+                同意报价
+              </view>
+              <view bindtap="notAgreedTo" data-order="{{order}}" class="button-view">
+                不同意报价
+              </view>
+            </view>
+            <view class="button-view" wx:if="{{order.is_agree_price=='False'}}">
+              未同意报价
+            </view>
+            <view class="button-view" wx:if="{{order.is_agree_price=='True'}}">
+              已同意报价
+            </view>
+            <view wx:if="{{order.order_status=='waitdelivery'}}" bindtap="sendOut" data-order="{{order}}" class="button-view sendOut">
+              去发货
+            </view>
+            <view class="button-view" bindtap="delOrder" data-ordernumber="{{order.order_number}}" wx:if="{{order.order_status=='cancel'}}">
+              删除订单
+            </view>
+            <view class="button-view" bindtap="cancelOrder" data-ordernumber="{{order.order_number}}" wx:if="{{order.order_status=='waitdelivery' || order.order_status=='delivered' && order.expree_mode=='visit'}}">
+              取消订单
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+	<view style="opacity:.001;height:350rpx;">这个是占位的，免得客服按钮挡住订单</view>
+	<!-- 底部弹出框 start -->
+	<view class="dialog_screen" wx:if="{{showModalStatus}}"></view>
+	<view animation="{{animationData}}" class="dialog_attr_box" wx:if="{{showModalStatus}}">
+		<view style='background:white;position: relative;overflow: hidden;'>
+			<view class='dialog_title'>
+				<!-- <text>您还未登录，请选择您的身份（什么是老用户？在小程序发布前已拥有回收账户。什么是新用户？在小程序发布前未拥有回收账户。若账户已绑定小程序或已注册的用户选择直接登录）</text> -->
+				<text class="waytitle">需要您的授权才能登录查看订单</text>
+			</view>
+		</view>
+		<view class='btn-box'>
+			<!-- <button hover-class='none' class='button2' open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-url='/pages/mine/per/updateinfo/updateinfo'>新用户登录</button> -->
+			<button hover-class='none' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class='button4'>点击授权登录</button>
+		</view>
+	</view>
+	<!-- 底部弹出框 end -->
+
+</view>
+<kefu-cmp>
+</kefu-cmp>

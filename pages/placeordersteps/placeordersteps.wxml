@@ -1,0 +1,52 @@
+<!-- 顶部大标题组件 -->
+<header-cmp isShow="false">
+  <view slot="question">
+    <text class="topTitleName">{{product_name}}{{bbb[1]}}</text>
+  </view>
+</header-cmp>
+<!-- /顶部大标题组件 -->
+<view class="container">
+  <view class="step-line" style="">当前进度{{choseNum}}/{{featureLength}}</view>
+  <view class="step-line-bg" style="width:{{stepPercent}}%;"></view>
+  <scroll-view
+    scroll-y scroll-with-animation="true" scroll-top="{{scrollTop}}" class="info-list">
+    <view wx:for="{{features_optionsEx}}" wx:key="Mkey" class="single-info" wx:for-index="M" wx:for-item="Mitem">
+      <view id="{{Mitem[0].price}}" class="title-line">
+        <view class="count-title-left">
+          <image src="/images/yj.png" style="width:10rpx;height:36rpx;margin-right:20rpx"></image>
+          <view class="feature-name">{{Tool.backStr(M, 0)}}</view>
+        </view>
+        <block wx:if="{{Tool.backStr(M, 2) == 'true'}}">
+          <image catchtap="showExplain" data-titlename="{{Tool.backStr(M, 0)}}" data-showtype="feature" data-showid="{{Tool.backStr(M, 1)}}" class="qst-btn " src="/images/ask3.png"></image>
+        </block>
+      </view>
+      <view class="feature-child-box">
+        <view bindtap="optionPressFun" wx:for="{{features_optionsEx[M]}}" wx:for-index="N" wx:for-item="Nitem" wx:key="Nkey" data-price="{{Nitem.price}}" data-optionid="{{Nitem.option_id}}" data-featuretype="{{Tool.backStr(M, 3)}}" data-optiontype="{{Nitem.isSpecial}}" class="abc{{N}} {{dataTemps[Tool.backStr(M, 1)][N][8]?'isConflict':''}} feature-child {{dataTemps[Tool.backStr(M, 1)][N][1]?'count-select':''}}" data-isselect="{{isSelect}}" data-position="abc{{N}}" data-parentfeatureid="{{Tool.backStr(M, 1)}}">{{Nitem.name}}
+
+          <image wx:if="{{Nitem.hasDetail}}" data-titlename="{{Nitem.name}}" data-showtype="option" data-showid="{{Nitem.option_id}}" catchtap="showExplain" class="child-qst-btn" src="/images/ask3.png"></image>
+        </view>
+      </view>
+    </view>
+    <button wx:if="{{ifShowBtn}}" bindtap="toPricePage" class="count_btn" size="default" type="button" plain="{{false}}" primarySize="default">立即估价</button>
+    <view class="blankBlock">这是一个透明标签用来占位</view>
+  </scroll-view>
+  <view bindtap="closeModal" class="mask" catchTouchMove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modalBox" wx:if="{{showModal}}">
+    <view class="myModal-title">{{explainTitle}}</view>
+    <image bindtap="closeModal" mode="aspectFit" class="outImg" src="images/out.png" />
+    <image mode="widthFix" class="demoImg" src="{{explainImg}}" />
+    <text class="explain">{{explainText}}</text>
+  </view>
+</view>
+
+<kefu-cmp></kefu-cmp>
+
+<wxs module='Tool'>
+  //字符串取值>>Tool.cutStr():val传入字符串，position切割的位置
+  var cutStr = function(val, position) {
+    return val.split('|')[position];
+  }
+  module.exports = {
+    backStr: cutStr
+  }
+</wxs>

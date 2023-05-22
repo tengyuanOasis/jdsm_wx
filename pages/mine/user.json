@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "dialog": "/components/Dialog/dialog",
+    "kefu-cmp": "/components/kefuservice/kefuservice"
+  }
+}

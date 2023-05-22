@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "kefu-cmp": "/components/kefuservice/kefuservice"
+  }
+}

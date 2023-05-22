@@ -1,0 +1,65 @@
+/* pages/questionguide/questionguide.wxss */
+page{
+  font-family: "微软雅黑";
+  background: white;
+}
+.rec {
+  font-size: 36rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 20rpx;
+  margin-top: 100rpx;
+}
+
+
+
+.li0 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 27rpx;
+  height: 100rpx;
+  width: 90%;
+  align-items: center;
+  border-bottom: 1rpx #ccc solid;
+  font-weight: bold;
+  margin-left: 5%;
+  border-bottom: 0rpx #ccc solid;
+  
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 27rpx;
+  height: 100rpx;
+  width: 90%;
+  align-items: center;
+  /* border-bottom: 1rpx #F3F3F3 solid; */
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.subitem {
+  padding: 2% 5% 2% 5%;
+  width: 80%;
+  font-size: 28rpx;
+  margin-left:5%;
+  color: #4BA7EC;
+  border:1rpx #F3F3F3 solid;
+  /* background: #D0E8FC; */
+  border-radius: 10rpx;
+  line-height: 46rpx;
+}
+
+
+
+
+

@@ -1,0 +1,424 @@
+/* pages/mine/user.wxss */
+
+.container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background: #f7f6fb;   
+}
+
+
+/*  */
+
+.user-info {
+  position: relative;
+  top: -30rpx;
+  left: 0;
+  width: 100%;
+  height: 230rpx;
+  background:#4BA7EC;
+  background-repeat:repeat-y;
+}
+
+.user {
+  width: 80%;
+  /* margin-left: 50rpx; */
+  height: 200rpx;
+  display: flex;
+  /* flex-direction: column; */
+  margin: 30rpx auto;
+  z-index: 99;
+  margin-top: -230rpx;
+}
+
+.user-image {
+  margin-left: 2rpx;
+  margin-top: 40rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius:50%;
+  z-index: 99;
+overflow:hidden;
+}
+.user-name{
+  float: right;
+  width: 60%;
+  height: 50rpx;
+  margin-left:10rpx;
+  align-self: center;
+  justify-self: center;
+  z-index: 99;
+}
+
+.nickName {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  -webkit-margin-before: 0.4em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0rpx;
+  -webkit-margin-end: 0rpx;
+  z-index: 99;
+}
+
+.userId {
+  color: white;
+  font-size: 0.8em;
+  display: block;
+  -webkit-margin-before: 0.4em;
+  -webkit-margin-after: 0.3em;
+  -webkit-margin-start: 0rpx;
+  -webkit-margin-end: 0rpx;
+  z-index: 99;
+}
+
+.user-image image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius:75rpx;
+  z-index: 99;
+}
+
+/*  */
+
+
+
+/*  */
+
+.recent-order {
+  position: relative;
+  top: 10rpx;
+  left: 0;
+  width: 100%;
+  font-size: 0.8em;
+  
+  background-color: #f7f6fb;
+}
+
+.order-title {
+  padding-top: 20rpx;
+  padding-bottom: 35rpx;
+  font-size: 35rpx;
+  font-weight:bolder;
+}
+
+.order-title text {
+  padding-left: 1em;
+}
+
+.order-list {
+  position: relative;
+  height: auto;
+  width: 100%;
+  bottom: 30rpx;
+}
+
+.order-list .order-null {
+  width: 250rpx;
+  height: 280rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-null image {
+  position: relative;
+  width: 200rpx;
+  height: 190rpx;
+  top: 0;
+  left: 25rpx;
+  right: 25rpx;
+}
+
+.order-null .order-gg text {
+  float: left;
+  margin-left: 20rpx;
+}
+
+.order-null .order-gg navigator {
+  float: left;
+  color: rgb(226, 153, 88);
+}
+
+.order-null .order-gg {
+  position: relative;
+  font-size: 0.7em;
+  top: 20rpx;
+  font-weight: 500;
+  color: grey;
+}
+
+.nav-to {
+  color: grey;
+}
+
+.order-has {
+  position: relative;
+  width: 95%;
+  height: auto;
+  top: 10rpx;
+  left: 2.5%;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 20rpx;
+}
+
+.order-has .order-title1 {
+  position: relative;
+  height: 40rpx;
+  width: 94%;
+  top: 20rpx;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 40rpx;
+  font-size: 1em;
+  padding-top: 10rpx;
+}
+
+.order-title1 .order-number {
+  float: left;
+  margin-left: 0;
+  color: #999999;
+}
+
+.order-number .text-number {
+  color: #999999;
+}
+
+.order-title1 .order-status {
+  float: right;
+  margin-right: 0;
+}
+
+.order-status text {
+  color: #f56e39;
+  font-weight: bold;
+  font-size: 25rpx;
+}
+
+.order-has .order-main {
+  position: relative;
+  height: 170rpx;
+  width: 94%;
+  top: 10rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-main image {
+  position: absolute;
+  width: 145rpx;
+  height: 145rpx;
+  top: 30rpx;
+  bottom: 0;
+  left: 10rpx;
+}
+
+.order-main .version-intro {
+  position: absolute;
+  width: 340rpx;
+  height: 210rpx;
+  top: 30rpx;
+  bottom: 20rxp;
+  left: 230rpx;
+}
+
+.version-intro .version-title {
+  font-size: 1.2em;
+  text-align: left;
+  color:#212123;
+  font-weight: bold;
+}
+
+.version-intro .version-deatil {
+  margin-top: 10rpx;
+  font-size: 0.9em;
+  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.version-intro .version-deatil text {
+  color: #212123;
+}
+
+.order-has .order-other {
+  position: relative;
+  height: 30rpx;
+  width: 100%;
+  top: 25rpx;
+  left: 0;
+  line-height: 30rpx;
+}
+
+.order-other text {
+  float: left;
+}
+
+.order-other .order-other-3 {
+  font-size: 0.9em;
+}
+
+.order-other .order-other-2, .order-other .order-other-1 {
+  font-size: 1.2em;
+  color: #FA6334;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.order-other .order-other-1 {
+  margin-right: 10rpx;
+}
+
+.order-has .order-button {
+  position: relative;
+  height: 80rpx;
+  width: 94%;
+  top: 10rpx;
+  left: 0;
+  bottom: 30rpx;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-top: 1rpx #f4f4f4 solid; */
+}
+
+.order-button navigator, .order-button .button-view {
+  float: right;
+  font-size: 0.85em;
+  padding: 8rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border-radius: 40rpx;
+  margin-top: 15rpx;
+  margin-right: 30rpx;
+  color:#555555;
+  background-color: #F5F4F9;
+}
+
+.order-button .order-button-deatil {
+  margin-right: 0 !important;
+  background-color:#FCB501 !important;
+  color: white !important;
+}
+
+.sendOut {
+  background-color: #FA6334 !important;
+  color: white !important;
+  border: none !important;
+  padding: 11rpx 32rpx !important;
+}
+
+/* dialog start */
+
+.dialog_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.1;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.dialog_attr_box {
+  width: 98%;
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+  right: 1%;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 1px;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  text-align: center;
+}
+
+.dialog_title {
+  font-size: 16px;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+
+.dialog_title text {
+  width: 100%;
+}
+
+.dialog_attr_box .btn-box {
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  min-height: 270rpx;
+}
+
+.dialog_attr_box .button1, .dialog_attr_box .button2, .dialog_attr_box .button4 {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  color: white;
+}
+
+.dialog_attr_box .button1 {
+  background-color: rgb(255, 221, 96);
+  font-size: 28rpx;
+  color: rgb(94, 66, 26);
+}
+
+.dialog_attr_box .button2 {
+  background-color: rgb(255, 220, 95);
+  font-size: 28rpx;
+  color: rgb(94, 66, 26);
+}
+
+.dialog_attr_box .button4 {
+  background-color: #4BA7EC;
+  font-size: 28rpx;
+  color: #eafde7;
+}
+
+.waytitle {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.send-tip {
+  background: rgb(255, 94, 82);
+  border-radius: 50rpx;
+  padding: 15rpx 20rpx;
+  margin: 10rpx 20rpx;
+  color: #fff;
+  font-weight: bolder;
+  font-weight: 1900;
+  display: flex;
+  font-size: 24rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.send-tip navigator {
+  background: #fff;
+  border-radius: 30rpx;
+  color: rgb(255, 108, 82);
+  padding: 10rpx 20rpx;
+  font-weight: bolder;
+}
+
+.send-tip text {
+  font-weight: bolder;
+}

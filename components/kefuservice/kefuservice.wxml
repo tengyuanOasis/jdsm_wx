@@ -1,0 +1,58 @@
+<!--components/kefuservice/kefuservice.axml-->
+<!-- TODO:此客服组件已经无法支持支付宝小程序，后续考虑支付宝官方一键客服 -->
+<!-- <view class="main" style="">
+  <movable-area class="move-box" style="">
+    <movable-view class="move-view" style="" direction="all">
+      <view>
+        <view class="kefu"> -->
+          <!-- WX2MY: 属性open-type=contact时，不被支持，请调整。 -->
+          <!--<button open-type="contact" class="kefu-img"><image src="/images/kefu.png"/></button> -->
+          <!-- <contact-button tnt-inst-id="oXK_i3Zu" scene="SCE00262611"/> -->
+          <!-- WX2MY: 属性open-type=contact时，不被支持，请调整。 -->
+          <!-- <button class="kefu-text">
+            <text>客服</text>
+          </button>
+        </view>
+      </view>
+    </movable-view>
+  </movable-area>
+</view> -->
+
+
+<!--客服-->
+<view class="main">
+  <movable-area class="move-box">
+    <movable-view class="move-view" direction="all">
+      <view>
+        <view class="kefu"  bindtap="kffunc">
+          <image src="../../images/kfimg.png" style="width:100rpx;height:100rpx;"/>
+        </view>
+      </view>
+    </movable-view>
+  </movable-area>
+</view>
+
+<!--客服弹框-->
+<!-- 弹框 -->
+<view class="mark_model" wx:if="{{isShowEditModel}}">
+  <view class="mark_content">
+    <form>
+      <view class="form-pre" style="margin-top:80rpx;">
+        <label style="font-size:26rpx;" bindtap="copyAddress">
+					客服微信：jianduan123123（点击复制）
+        </label>
+      </view>
+
+      <view class="form-pre">
+        <label style="font-size:26rpx;" bindtap="copyPhone">
+					客服电话：18475563915（点击复制）
+        </label>
+      </view>
+    </form>
+  </view>
+
+    <view class="kfbtn">
+      <image src="/images/closekf.png"  bindtap="closekf" style="width:50rpx;height:50rpx"></image>
+    </view>
+
+</view>

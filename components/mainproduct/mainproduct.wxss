@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  background: #fff;
+}
+
+.container .navigation {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 2rpx #f8f8f8 solid;
+  flex-wrap: nowrap;
+}
+
+.container .navigation view {
+  font-weight: bolder;
+  font-size: 30rpx;
+  display: inline-block !important;
+  padding: 24rpx !important;
+}
+
+.item-sign-flag {
+  /* border-bottom: 4rpx #4BA7EC solid; */
+  border-top: 6rpx white solid;
+  background: #F3F3F3;
+}
+
+.left-brand {
+  display: inline-block;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-brand .item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 28rpx;
+  padding-top: 35rpx !important;
+  padding-bottom: 35rpx !important;
+  padding-left: 12rpx !important;
+}
+
+.left-brand .sign {
+  border-left: 6rpx #4BA7EC solid;
+  color: #4BA7EC;
+}
+
+.left-brand .item>image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.container .right-product {
+  display: inline-block;
+  height: 900rpx;
+  margin-left: 12rpx;
+}
+
+.container .right-product .right-pre-item {
+  width: 160rpx;
+  height: 250rpx;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  text-align: center;
+  margin-right: 10rpx;
+  position: relative;
+}
+
+.container .right-product .right-pre-item text {
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 30rpx;
+}
+
+.container .right-product image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.digital-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.loading {
+  position: relative;
+  left: 50%;
+  margin-left: -100rpx;
+  width: 200rpx;
+  padding-bottom: 10rpx;
+}
+
+.loading2 {
+  position: relative;
+  right: -140rpx;
+}
+
+.active-mark {
+  height: 28rpx;
+  width: 100rpx;
+  background-color: #f33;
+  color: #fff3f3;
+  top: 28%;
+  right: 10%;
+  margin-right: 12rpx;
+  margin-top: 10rpx;
+  font-size: 21rpx;
+  position: absolute;
+  transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  /* IE 9 */
+  -moz-transform: rotate(15deg);
+  /* Firefox */
+  -webkit-transform: rotate(15deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(15deg);
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 90rpx;
+  box-shadow: 0 5rpx 5rpx #c1350b;
+}

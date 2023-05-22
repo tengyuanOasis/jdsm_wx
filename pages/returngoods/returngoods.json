@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header-cmp": "/components/header/header",
+    "listmessage-cmp":"/components/listmessage/listmessage"
+  },
+  "enablePullDownRefresh": false
+}
