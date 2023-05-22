@@ -81,15 +81,16 @@ module.exports = {
   backStr: cutStr
 }
 </script>
-
-
 <script>
 import headerCmp from '@/components/header/header';
+import kefuCmp from '@/components/kefuservice/kefuservice';
+// pages/digitalordersteps/digitalordersteps.js
 import { tips } from '../../utils/tips';
 import { commonDomain as domain } from '../../constant/common';
 export default {
     components: {
         headerCmp,
+        kefuCmp
     },
     data() {
         return {
