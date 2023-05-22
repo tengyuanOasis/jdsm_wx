@@ -1,8 +1,77 @@
 {
+	"globalStyle": {
+		"backgroundTextStyle": "dark",
+		"navigationBarTitleText": "尖端数码回收",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh": false,
+		"pageOrientation": "portrait",
+		"navigationBarBackgroundColor": "#ea3323", // 导航栏背景颜色（同状态栏背景色）
+		"mp-weixin": {
+			"navigationBarTextStyle": "black",
+			"navigationBarBackgroundColor": "#FFFFFF"
+		},
+		"mp-alipay": {
+			"allowsBounceVertical": "NO",
+			"enableInPageRenderInput": "YES",
+			"gestureBack": "YES",
+			"lazyCodeLoading": "requiredComponents"
+		}
+	},
+	"navigateToMiniProgramAppIdList": [
+		"wx4174ac2bfe1ab419"
+	],
+	"networkTimeout": {
+		"request": 20000,
+		"downloadFile": 10000
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"borderStyle": "white",
+		"selectedColor": "#ea3323",
+		"backgroundColor": "#fff",
+		"color": "#000000",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tab/home.png",
+				"selectedIconPath": "static/images/tab/home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/images/tab/more.png",
+				"selectedIconPath": "static/images/tab/more_active.png",
+				"text": "产品列表"
+			},
+			{
+				"pagePath": "pages/mine/user",
+				"iconPath": "static/images/tab/user.png",
+				"selectedIconPath": "static/images/tab/user_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"my-(.*)": "@/components/my-$1/my-$1.vue"
+		}
+	},
 	"pages": [
 		{
 			"path": "pages/index/index",
-			"style": {}
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "white",
+				"onReachBottomDistance": 100,
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 导航栏样式，仅支持 default/custom。custom即取消默认的原生导航栏
+				"enablePullDownRefresh": false, // 是否开启下拉刷新
+				"mp-alipay": {
+					"transparentTitle": "always", // 导航栏整体（前景、背景）透明设置。支持 always 一直透明 / auto 滑动自适应 / none 不透明
+					"titlePenetrate": "YES" // 导航栏点击穿透
+				}
+			}
 		},
 		{
 			"path": "pages/search/search",
@@ -104,47 +173,5 @@
 				"component": true
 			}
 		}
-	],
-	"tabBar": {
-		"borderStyle": "white",
-		"selectedColor": "#4BA7EC",
-		"backgroundColor": "#fff",
-		"color": "#000000",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"iconPath": "static/images/tab/first_icon.png",
-				"selectedIconPath": "static/images/tab/first_icon_highlight.png",
-				"text": "首页"
-			},
-			{
-				"pagePath": "pages/category/category",
-				"iconPath": "static/images/tab/second_icon.png",
-				"selectedIconPath": "static/images/tab/second_icon_highlight.png",
-				"text": "分类"
-			},
-			{
-				"pagePath": "pages/mine/user",
-				"iconPath": "static/images/tab/third_icon.png",
-				"selectedIconPath": "static/images/tab/third_icon_highlight.png",
-				"text": "我的"
-			}
-		]
-	},
-	"navigateToMiniProgramAppIdList": [
-		"wx4174ac2bfe1ab419"
-	],
-	"networkTimeout": {
-		"request": 20000,
-		"downloadFile": 10000
-	},
-	"sitemapLocation": "sitemap.json",
-	"globalStyle": {
-		"backgroundTextStyle": "dark",
-		"navigationBarBackgroundColor": "#4BA7EC",
-		"navigationBarTitleText": "尖端数码回收",
-		"navigationBarTextStyle": "white",
-		"enablePullDownRefresh": true
-	},
-	"subPackages": []
+	]
 }

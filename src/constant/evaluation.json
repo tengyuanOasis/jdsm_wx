@@ -1,0 +1,106 @@
+[
+  [
+    {
+      "avatar": "https://example.com/avatar/12345.jpg",
+      "spuName": "苹果 iPhone XR",
+      "sellPrice": "1313",
+      "evaluation": "非常方便，交易很快，价格也不错！"
+    },
+    {
+      "avatar": "https://example.com/avatar/67890.png",
+      "spuName": "三星 Galaxy S20",
+      "sellPrice": "999",
+      "evaluation": "我以前一直担心把手机卖掉后隐私泄露的问题，但这个回收服务真的很可靠，非常满意！"
+    },
+    {
+      "avatar": "https://example.com/avatar/54321.jpg",
+      "spuName": "华为 P30 Pro",
+      "sellPrice": "800",
+      "evaluation": "非常感谢这个回收平台！我的手机有点旧了，但价格还算公道，交易也非常快速！"
+    },
+    {
+      "avatar": "https://example.com/avatar/09876.png",
+      "spuName": "小米 10",
+      "sellPrice": "1200",
+      "evaluation": "我对这个回收平台的客服服务非常满意！他们非常耐心地回答了我所有的问题，并且整个回收过程也很顺利！"
+    }
+  ],
+  [
+    {
+      "avatar": "https://example.com/avatar/13579.jpg",
+      "spuName": "OPPO Reno3 Pro",
+      "sellPrice": "850",
+      "evaluation": "我之前从来没有用过手机回收这种服务，但这次尝试非常成功！真的很方便，价格也很合理！"
+    },
+    {
+      "avatar": "https://example.com/avatar/24680.png",
+      "spuName": "荣耀 V30",
+      "sellPrice": "750",
+      "evaluation": "我觉得这个回收平台的价格很公道，和其他平台相比，他们的报价是最高的！"
+    },
+    {
+      "avatar": "https://example.com/avatar/13245.jpg",
+      "spuName": "vivo X60",
+      "sellPrice": "980",
+      "evaluation": "我非常喜欢这个回收平台的交易流程，非常方便，而且交易完成后，钱也很快就到账了！"
+    },
+    {
+      "avatar": "https://example.com/avatar/98765.png",
+      "spuName": "魅族 17",
+      "sellPrice": "690",
+      "evaluation": "我的手机坏了，我需要快速卖掉它，但我也不想把它扔掉，这个回收平台就是我需要的，交易也非常迅速！"
+    }
+  ],
+  [
+    {
+      "avatar": "https://example.com/avatar/11111.jpg",
+      "spuName": "诺基亚 7.2",
+      "sellPrice": "899",
+      "evaluation": "我对这个回收平台的服务非常满意，我肯定会再次使用它！"
+    },
+    {
+      "avatar": "https://example.com/avatar/22222.png",
+      "spuName": "华硕 Zenfone 6",
+      "sellPrice": "570",
+      "evaluation": "我卖掉了我的旧手机，并用这个回收平台的钱买了新手机，非常感谢这个平台的存在！"
+    },
+    {
+      "avatar": "https://example.com/avatar/33333.jpg",
+      "spuName": "LG G7 ThinQ",
+      "sellPrice": "420",
+      "evaluation": "我的手机非常老了，但这个回收平台还是愿意买下它，并且价格也不错，非常感谢！"
+    },
+    {
+      "avatar": "https://example.com/avatar/44444.png",
+      "spuName": "索尼 Xperia 1 II",
+      "sellPrice": "1600",
+      "evaluation": "我的手机非常值钱，但我不知道该怎么卖，这个回收平台非常靠谱，而且价格也很高！"
+    }
+  ],
+  [
+    {
+      "avatar": "https://example.com/avatar/55555.jpg",
+      "spuName": "一加 7T",
+      "sellPrice": "900",
+      "evaluation": "我之前在其他回收平台尝试过，但这个平台真的很不错，非常容易卖出手机，价格也还算不错！"
+    },
+    {
+      "avatar": "https://example.com/avatar/66666.png",
+      "spuName": "中兴 Axon 11 SE",
+      "sellPrice": "600",
+      "evaluation": "我的手机坏了，但这个回收平台仍然愿意接收它，并且价格也不错，非常感谢！"
+    },
+    {
+      "avatar": "https://example.com/avatar/77777.jpg",
+      "spuName": "华为 nova 5i Pro",
+      "sellPrice": "880",
+      "evaluation": "这个回收平台提供的服务非常快速，报价也非常合理，整个交易流程非常顺畅，非常感谢！"
+    },
+    {
+      "avatar": "https://example.com/avatar/88888.png",
+      "spuName": "三星 Galaxy A51",
+      "sellPrice": "680",
+      "evaluation": "我对这个回收平台的评价非常高！非常简单易用，价格也很好，非常推荐给大家！"
+    }
+  ]
+]
