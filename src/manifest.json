@@ -1,0 +1,47 @@
+{
+	"name": "爱疯数码回收",
+	"appid": "",
+	"description": "",
+	"versionName": "1.0.0",
+	"versionCode": "100",
+	"transformPx": false,
+	"mp-weixin": {
+		"appid": "wx1d33c6280e762f72",
+		"lazyCodeLoading": "requiredComponents",
+		"requiredPrivateInfos": [],
+		"setting": {
+			"urlCheck": false,
+			"es6": true,
+			"postcss": true,
+			"minified": true
+		},
+		"optimization": {
+			"subPackages": true
+		},
+		"usingComponents": true,
+		"permission": {
+			"scope.userLocation": {
+				"desc": "你的位置信息将用于小程序位置接口的效果展示"
+			}
+		},
+		"navigateToMiniProgramAppIdList": [
+			"wx4174ac2bfe1ab419"
+		]
+	},
+	"mp-alipay": {
+		"component2": true,
+		"appid": "",
+		"lazyCodeLoading": true,
+		"enableAppxNg": true,
+		"enableParallelLoader": true,
+		"enableDistFileMinify": true,
+	},
+	"uniStatistics": {
+		"enable": false
+	},
+	"vueVersion": "2",
+	"networkTimeout": {
+		"request": 20000,
+		"downloadFile": 10000
+	}
+}

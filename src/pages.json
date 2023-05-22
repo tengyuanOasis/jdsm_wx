@@ -1,0 +1,150 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/mine/per/per",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/questionguide/questionguide",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/recycleguide/recycleguide",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/placeordersteps/placeordersteps",
+			"style": {}
+		},
+		{
+			"path": "pages/digitallist/digitallist",
+			"style": {}
+		},
+		{
+			"path": "pages/digitalordersteps/digitalordersteps",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/orderdetails/orderdetail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/showcountprice/showcountprice",
+			"style": {}
+		},
+		{
+			"path": "pages/orderpage/orderpage",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/route/route",
+			"style": {}
+		},
+		{
+			"path": "pages/returngoods/returngoods",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/onlineexpress/onlineexpress",
+			"style": {}
+		},
+		{
+			"path": "pages/sellerexpress/sellerexpress",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/servicerule/servicerule",
+			"style": {}
+		},
+		{
+			"path": "pages/testReport/testReport",
+			"style": {
+				"navigationBarTitleText": "验机报告"
+			}
+		},
+		{
+			"path": "pages/testReport/checktestimg/checktestimg",
+			"style": {}
+		},
+		{
+			"path": "components/guides/guides",
+			"style": {
+				"component": true
+			}
+		}
+	],
+	"tabBar": {
+		"borderStyle": "white",
+		"selectedColor": "#4BA7EC",
+		"backgroundColor": "#fff",
+		"color": "#000000",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tab/first_icon.png",
+				"selectedIconPath": "static/images/tab/first_icon_highlight.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/images/tab/second_icon.png",
+				"selectedIconPath": "static/images/tab/second_icon_highlight.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/mine/user",
+				"iconPath": "static/images/tab/third_icon.png",
+				"selectedIconPath": "static/images/tab/third_icon_highlight.png",
+				"text": "我的"
+			}
+		]
+	},
+	"navigateToMiniProgramAppIdList": [
+		"wx4174ac2bfe1ab419"
+	],
+	"networkTimeout": {
+		"request": 20000,
+		"downloadFile": 10000
+	},
+	"sitemapLocation": "sitemap.json",
+	"globalStyle": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#4BA7EC",
+		"navigationBarTitleText": "尖端数码回收",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh": true
+	},
+	"subPackages": []
+}

@@ -1,0 +1,92 @@
+<template>
+    <!-- components/listmessage/listmessage.wxml -->
+    <!-- 列表数据组件 -->
+    <view :class="containers">
+        <view :class="tipclass"></view>
+        <slot name="before"></slot>
+        <view class="tg">
+            <slot name="after"></slot>
+        </view>
+    </view>
+</template>
+
+<script>
+// components/listmessage/listmessage.js
+export default {
+    data() {
+        return {};
+    },
+    options: {
+        multipleSlots: true
+    },
+    /**
+     * 组件的属性列表
+     */
+    props: {
+        tipclass: {
+            type: String,
+            default: 'commontip'
+        },
+        containers: {
+            type: String,
+            default: 'container'
+        }
+    },
+    /**
+     * 组件的方法列表
+     */
+    methods: {},
+    created: function () {}
+};
+</script>
+<style>
+/* components/listmessage/listmessage.wxss */
+page {
+    font-family: '微软雅黑';
+}
+.container {
+    width: 100% !important;
+    height: 70rpx !important;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-top: 10rpx;
+    padding-bottom: 16rpx;
+}
+
+.commontip {
+    display: inline-block;
+    width: 20rpx;
+    height: 40rpx;
+    background: #ffd22b;
+    margin-right: 40rpx;
+}
+
+.container text {
+    font-size: 0.24rem;
+    color: #333333;
+}
+.tg {
+    position: absolute;
+    right: 5%;
+}
+
+.bgs {
+    display: inline-block;
+    margin-right: 40rpx;
+}
+.bgs text {
+    font-size: 35rpx;
+}
+.containerforreturn {
+    width: 100% !important;
+    height: 70rpx !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-top: 13rpx;
+}
+</style>

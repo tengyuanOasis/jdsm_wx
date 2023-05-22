@@ -1,6 +1,0 @@
-{
-  "usingComponents":{
-    "mainproduct-cmp":"/components/mainproduct/mainproduct",
-    "kefu-cmp": "/components/kefuservice/kefuservice"
-  }
-}

@@ -1,5 +1,0 @@
-<!--components/rotation/rotation.wxml-->
-<!--首页轮播图组件-->
-<view class="ban">
-  <image class="swiper-item" src="/images/share_img.jpg" style="width:90%;height:300rpx;border-radius:10rpx"></image>
-</view>

@@ -1,8 +1,0 @@
-
-.ban{
-  width: 100%;
-  height:300rpx;
-  text-align:center;
-  margin-top:42rpx; 
-  margin-bottom:42rpx; 
-}
