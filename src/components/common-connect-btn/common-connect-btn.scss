@@ -1,0 +1,9 @@
+.common-connect-btn {
+    position: fixed;
+    right: 10rpx;
+    bottom: 200rpx;
+    z-index: 999;
+    .content {
+        position: relative;
+    }
+}

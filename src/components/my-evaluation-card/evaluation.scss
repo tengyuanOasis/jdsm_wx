@@ -1,0 +1,44 @@
+.card {
+  width: 100%;
+  border-radius: 20rpx;
+  background-color: #fff;
+  margin: 0 0 30rpx;
+  padding: 20rpx;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .card-header-title {
+    font-size: 36rpx;
+    margin: 20rpx;
+    font-weight: bold;
+  }
+}
+
+
+.evaluation {
+  .swiper-item-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .swiper-item-header-spuName {
+    font-size: 28rpx;
+    font-weight: bold;
+  }
+  .swiper-item-header-price {
+    font-weight: bold;
+    color: red;
+    font-size: 28rpx;
+  }
+
+  .ant-collapse-item-content {
+    color: #999;
+    line-height: 40rpx;
+  }
+}
