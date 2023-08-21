@@ -1,0 +1,99 @@
+.container {
+    background-color: #f7f6fb;
+    padding: 0 30rpx;
+}
+
+.title {
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+
+.r-title {
+    width: 350rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+
+    z-index: 999;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -90rpx;
+
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 2rpx 2rpx 10rpx rgb(218, 218, 230);
+    border-radius: 20rpx;
+}
+.r-title text {
+    color: #333;
+    font-weight: 600;
+}
+.r-box {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    margin: 50rpx auto auto auto;
+    background-color: white;
+    padding: 50rpx 30rpx;
+    border-radius: 30rpx;
+}
+.r-c {
+    width: 94%;
+    height: auto;
+    margin: 50rpx auto;
+}
+.r-c .r-c-i {
+    width: 100%;
+    margin-top: 30rpx;
+    overflow: hidden;
+    display: block;
+    .question {
+        font-size: 30rpx;
+        color: #000;
+        font-weight: bold;
+    }
+    .answer {
+        font-size: 28rpx;
+        color: #999999;
+        margin-top: 20rpx;
+    }
+
+    .pass {
+        margin-left: 20rpx;
+        font-size: 24rpx;
+        color: green;
+    }
+    .pass-fail {
+        margin-left: 20rpx;
+        font-size: 24rpx;
+        color: red;
+    }
+
+    .res-icon {
+        width: 30px;
+        height: 30px;
+        float: right;
+    }
+
+    .pass-icon {
+        color: green;
+    }
+
+    .pass-fail-icon {
+        color: red;
+    }
+}
+
+.tip {
+    width: 94%;
+    margin: 50rpx auto;
+    color: #999999;
+    text-align: center;
+    font-size: 0.7em;
+}

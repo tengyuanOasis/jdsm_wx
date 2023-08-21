@@ -1,0 +1,143 @@
+$radius: 20rpx;
+.page {
+    width: 100%;
+    background-color: rgba($color: #ddd, $alpha: 0.5);
+    padding: 20rpx 30rpx;
+}
+
+.order-main {
+    width: 100%;
+    border-radius: $radius;
+    background-color: #fff;
+    display: flex;
+
+    .spu-avatar {
+        width: 145rpx;
+        height: 145rpx;
+    }
+
+    .version-intro {
+        width: calc(100% - 145rpx - 20rpx);
+        padding: 20rpx 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20rpx;
+        .version-title {
+            width: 100%;
+            font-size: 1.3em;
+            text-align: left;
+            color: #212123;
+            font-weight: bold;
+        }
+
+        .version-deatil {
+            margin-top: 10rpx;
+            font-size: 0.9em;
+            width: 100%;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            white-space: normal;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            height: 25rpx;
+        }
+    }
+}
+
+.version-intro .version-deatil text {
+    color: #212123;
+}
+
+.order-has .order-other {
+    position: relative;
+    height: 30rpx;
+    width: 100%;
+    top: 25rpx;
+    left: 0;
+    line-height: 30rpx;
+}
+
+.order-other text {
+    float: left;
+}
+
+.order-other {
+    .order-other-1,
+    .order-other-2 {
+        font-size: 1em;
+        color: red;
+        font-weight: bold;
+        font-style: normal;
+    }
+    .order-other-1 {
+        margin-right: 10rpx;
+    }
+    .order-other-3 {
+        font-size: 1em;
+    }
+}
+
+.order-detail .order-image {
+    width: 100%;
+    height: 210rpx;
+    /* box-shadow: 10px 10px 10px #bfbfbe2e; */
+    background: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+.order-image image {
+    width: 300rpx;
+    height: 160rpx;
+}
+
+.order-title {
+    position: relative;
+    border-left: 20rpx #ffd22b solid;
+    width: 70%;
+    top: 50rpx;
+    left: 0;
+    padding-left: 30rpx;
+}
+
+.order-title text {
+    font-size: 1em;
+}
+
+.order-detail-item {
+    position: relative;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20rpx;
+    color: #999;
+    word-wrap: break-word;
+    height: auto !important;
+    text-align: left !important;
+}
+.order-detail-item-title {
+    color: #000;
+    min-width: 120rpx;
+    display: inline-block;
+}
+.order-detail-item text {
+    font-size: 0.8em;
+}
+
+.version-detail {
+    padding: 0 0 30rpx;
+}
+.report-btn {
+    height: 100rpx;
+    width: 100%;
+    margin-top: 100rpx;
+}
+.report-btn button {
+    width: 100%;
+    height: 100%;
+    background: red;
+    line-height: 100rpx;
+    color: white;
+}

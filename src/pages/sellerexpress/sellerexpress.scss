@@ -1,0 +1,459 @@
+/** @format */
+
+page {
+	font-family: '微软雅黑';
+	width: 100%;
+}
+
+.container-ex {
+	width: 100%;
+	background-color: #f8f8f8;
+	padding: 20rpx 30rpx;
+}
+/*  */
+.title {
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20rpx;
+}
+.title text {
+	color: #212123;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+/**订单信息开始，该样式可以通用**/
+
+.order-has {
+	width: 100%;
+	background-color: white;
+}
+.order-title {
+	font-size: 24rpx;
+	margin: 20rpx;
+}
+.order-has .order-title1 {
+	position: relative;
+	height: 40rpx;
+	width: 100%;
+	top: 20rpx;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 40rpx;
+	font-size: 1em;
+	padding-top: 10rpx;
+}
+
+.order-title1 .order-number {
+	float: left;
+	margin-left: 0;
+	color: #999999;
+}
+
+.order-number .text-number {
+	color: #999999;
+}
+
+.order-title1 .order-status {
+	float: right;
+	margin-right: 0;
+}
+
+.order-status text {
+	color: #f56e39;
+	font-weight: bold;
+	font-size: 25rpx;
+}
+
+.order-main {
+	width: 100%;
+	border-radius: 20rpx;
+	background-color: #fff;
+	display: flex;
+
+	.spu-avatar {
+		width: 145rpx;
+		height: 145rpx;
+	}
+
+	.version-intro {
+		width: calc(100% - 145rpx - 20rpx);
+		padding: 20rpx 0;
+		display: flex;
+		flex-direction: column;
+		gap: 10rpx;
+		.version-title {
+			width: 100%;
+			font-size: 1.3em;
+			text-align: left;
+			color: #212123;
+			font-weight: bold;
+		}
+
+		.version-deatil {
+			margin-top: 10rpx;
+			font-size: 0.9em;
+			width: 100%;
+			display: -webkit-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			word-wrap: break-word;
+			white-space: normal;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			height: 25rpx;
+		}
+	}
+}
+.version-intro .version-title {
+	font-size: 1.3em;
+	text-align: left;
+	color: #212123;
+	font-weight: bold;
+}
+
+.version-intro .version-deatil {
+	font-size: 0.9em;
+	width: 100%;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.version-intro .version-deatil text {
+	color: #212123;
+}
+
+.order-has .order-other {
+	position: relative;
+	height: 30rpx;
+	width: 100%;
+	top: 25rpx;
+	left: 0;
+	line-height: 30rpx;
+}
+
+.order-other text {
+	float: left;
+}
+
+.order-other .order-other-3 {
+	font-size: 0.9em;
+}
+
+.order-other .order-other-2,
+.order-other .order-other-1 {
+	font-size: 1em;
+	color: red;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.order-other .order-other-1 {
+	margin-right: 10rpx;
+}
+
+.order-has .order-button {
+	position: relative;
+	height: 80rpx;
+	width: 100%;
+	top: 10rpx;
+	left: 0;
+	bottom: 30rpx;
+	margin-left: auto;
+	margin-right: auto;
+	/* border-top: 1rpx #f4f4f4 solid; */
+}
+
+.order-button navigator,
+.order-button .button-view {
+	float: right;
+	font-size: 0.85em;
+	padding: 8rpx;
+	padding-left: 20rpx;
+	padding-right: 20rpx;
+	border-radius: 40rpx;
+	margin-top: 15rpx;
+	margin-right: 30rpx;
+	color: #555555;
+	background-color: #f5f4f9;
+}
+
+.sendOut {
+	background-color: #fa6334 !important;
+	color: white !important;
+	border: none !important;
+	padding: 11rpx 32rpx !important;
+}
+/**订单信息结束，**/
+
+/**表单部分样式开始**/
+
+.container-ex .formClass {
+	margin-top: 20rpx;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 30rpx;
+	color: #333;
+	background-color: #f8f8f8;
+}
+.formClass .content-box {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-radius: 20rpx;
+}
+.formClass view {
+	background-color: #fff;
+	padding: 20rpx;
+}
+
+.formClass .express-cl {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	flex-wrap: nowrap;
+	border-bottom: #f1f1f1 solid 2rpx;
+}
+.formClass .express-cl > text {
+	color: #212123;
+	font-weight: 600;
+}
+.formClass .express-cl .picker {
+	display: inline-block;
+	padding: 0;
+	position: relative;
+}
+
+.formClass .express-cl .picker image {
+	position: absolute;
+	right: -32rpx;
+	width: 25rpx;
+	height: 25rpx;
+	top: 34rpx;
+}
+
+.j_express_number {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	border-bottom: #f1f1f1 solid 2rpx;
+}
+.j_express_number > text {
+	color: #212123;
+	font-weight: 600;
+}
+.j_express_number input {
+	width: 70%;
+}
+
+.formClass .remark {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border-radius: 20rpx;
+}
+.formClass .remark > view {
+	position: relative;
+	width: 100%;
+	left: -20rpx;
+}
+.formClass .remark text {
+	display: inline-block;
+	position: absolute;
+	font-weight: 600;
+	color: #212123;
+}
+
+.formClass .note {
+	background-color: #f8f8f8;
+	color: #808080;
+	font-size: 28rpx;
+	line-height: 50rpx;
+}
+
+.formClass .yuyue-btn {
+	background: red;
+	width: 90%;
+	text-align: center;
+	padding-top: 20rpx;
+	padding-bottom: 20rpx;
+	margin: auto;
+	border-radius: 6rpx;
+	margin-bottom: 100rpx;
+	margin-top: 40rpx;
+	border: none;
+	color: white;
+	border-radius: 30rpx;
+}
+
+/**表单部分样式结束**/
+
+.order-button {
+	height: 70rpx;
+	width: 96%;
+	background: white;
+	font-size: 25rpx;
+	border-top: 1px solid #f6f6f6;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.order-button-deatil {
+	padding: 10rpx 30rpx 10rpx 30rpx;
+	background: #ffd128;
+}
+
+.receiveaddress {
+	margin-top: 20rpx;
+	width: 100%;
+	height: 230rpx;
+	text-align: center;
+	background-color: white;
+	border-radius: 20rpx;
+	padding: 20rpx;
+}
+
+.receiveaddress text {
+	margin-top: 20rpx;
+	display: inline-block;
+	width: 100%;
+	line-height: 50rpx;
+	text-align: left;
+	color: #614f3b;
+	font-size: 24rpx;
+}
+.copy-btn {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30rpx;
+	margin-bottom: 20rpx;
+}
+
+.copy-btn button {
+	float: right;
+	padding: 10rpx;
+	font-size: 26rpx;
+	width: 150rpx;
+	height: 50rpx;
+	text-align: center;
+	line-height: 30rpx;
+	border-radius: 25rpx;
+	background-color: red;
+	color: white;
+}
+
+/*  */
+
+.company-cl .hightlight {
+	background-color: #ade1f5;
+}
+
+.single-tip {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 20rpx;
+	margin: 18rpx 0;
+	border-radius: 8rpx;
+	box-shadow: 5rpx 5rpx 10rpx rgba(179, 190, 209, 0.1);
+}
+
+.single-tip text {
+	display: block;
+}
+
+.order-box {
+	width: 92%;
+	margin: 0 auto;
+}
+
+.single-order {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 25rpx 15rpx 25rpx 25rpx;
+	margin: 18rpx 0;
+	border-radius: 8rpx;
+	box-shadow: 5rpx 5rpx 10rpx rgba(179, 190, 209, 0.1);
+}
+
+.main-img {
+	width: 130rpx;
+	height: 130rpx;
+}
+
+.single-order text {
+	display: block;
+}
+
+.center {
+	/* background-color: rgb(84, 230, 198); */
+	width: 90%;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 34rpx;
+	padding-bottom: 8rpx;
+}
+
+.text1 {
+	font-size: 22rpx;
+	color: rgb(174, 189, 197);
+}
+
+.right image {
+	width: 36rpx;
+	height: 36rpx;
+}
+
+.source-edit {
+	color: #000;
+	font-size: 24rpx;
+	display: inline-block;
+	margin-left: 10rpx;
+}
+
+.remark-detail {
+	box-sizing: border-box;
+	width: 95%;
+	background-color: #efefef;
+	font-size: 26rpx;
+	padding: 20rpx;
+	border-radius: 20rpx;
+	margin-top: 50rpx;
+}
+
+.form-item-title {
+	width: 220rpx;
+}
+
+.form-item-value {
+	text-align: left;
+	font-size: 26rpx;
+	width: 100%;
+}

@@ -1,0 +1,182 @@
+{
+	"tabBar": {
+		"borderStyle": "white",
+		"selectedColor": "#ea3323",
+		"backgroundColor": "#fff",
+		"textColor": "#000000",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tab/home.png",
+				"selectedIconPath": "static/images/tab/home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/images/tab/more.png",
+				"selectedIconPath": "static/images/tab/more_active.png",
+				"text": "产品列表"
+			},
+			{
+				"pagePath": "pages/mine/user",
+				"iconPath": "static/images/tab/user.png",
+				"selectedIconPath": "static/images/tab/user_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 20000,
+		"downloadFile": 10000
+	},
+	"sitemapLocation": "sitemap.json",
+	"useDynamicPlugins": true,
+	"ignoreDevUnusedFiles": false,
+	"ignoreUploadUnusedFiles": false,
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^avatar$": "@/components/Avatar/index",
+			"^container$": "@/components/Container/index",
+			"^popup$": "@/components/Popup/index",
+			"^empty$": "@/components/Empty/index",
+			"my-(.*)": "@/components/my-$1/my-$1.vue",
+			"fui-(.*)": "firstui-uni/firstui/fui-$1/fui-$1.vue"
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#ff0008",
+		"titleBarColor": "#ea3323",
+		"requiredPrivateInfos": ["chooseAddress"]
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"transparentTitle": "always",
+				"titlePenetrate": "YES",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO",
+					"titlePenetrate": "YES"
+				}
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "产品列表"
+			}
+		},
+		{
+			"path": "pages/mine/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/mine/per/per",
+			"style": {
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/questionguide/questionguide",
+			"style": {
+				"navigationBarTitleText": "常见问题"
+			}
+		},
+		{
+			"path": "pages/recycleguide/recycleguide",
+			"style": {}
+		},
+		{
+			"path": "pages/placeordersteps/placeordersteps",
+			"style": {
+				"navigationBarTitleText": "填写估价信息",
+				"disablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/digitallist/digitallist",
+			"style": {
+				"navigationBarTitleText": "智能数码"
+			}
+		},
+		{
+			"path": "pages/digitalordersteps/digitalordersteps",
+			"style": {
+				"navigationBarTitleText": "填写估价信息"
+			}
+		},
+		{
+			"path": "pages/showcountprice/showcountprice",
+			"style": {
+				"navigationBarTitleText": "预估报价"
+			}
+		},
+		{
+			"path": "pages/orderpage/orderpage",
+			"style": {
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/mine/route/route",
+			"style": {
+				"navigationBarTitleText": "物流信息"
+			}
+		},
+		{
+			"path": "pages/returngoods/returngoods",
+			"style": {}
+		},
+		{
+			"path": "pages/onlineexpress/onlineexpress",
+			"style": {
+				"navigationBarTitleText": "发货/回收下单"
+			}
+		},
+		{
+			"path": "pages/sellerexpress/sellerexpress",
+			"style": {
+				"navigationBarTitleText": "寄出信息"
+			}
+		},
+		{
+			"path": "pages/servicerule/servicerule",
+			"style": {}
+		},
+		{
+			"path": "pages/testReport/testReport",
+			"style": {
+				"navigationBarTitleText": "验机报告"
+			}
+		},
+		{
+			"path": "pages/testReport/checktestimg/checktestimg",
+			"style": {
+				"navigationBarTitleText": "检测报告"
+			}
+		},
+		{
+			"path": "pages/orderList/orderList",
+			"style": {
+				"navigationBarTitleText": "订单列表"
+			}
+		},
+		{
+			"path": "pages/orderdetails/orderdetail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		}
+	]
+}

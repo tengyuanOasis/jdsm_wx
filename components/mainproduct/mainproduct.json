@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "loading-cmp":"/components/loading/loading"
-  }
-}

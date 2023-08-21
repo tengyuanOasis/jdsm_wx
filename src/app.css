@@ -1,0 +1,109 @@
+/**
+ * app.wxss*
+ *
+ * @format
+ */
+
+page,
+view,
+text,
+input,
+button {
+    box-sizing: border-box;
+}
+
+page {
+    height: 100%;
+    background: #f7f6fb;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #f7f6fb;
+}
+
+/* button默认样式 */
+
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    /* 支付宝小程序button会莫名出现height：47px的属性，所以此处写auto */
+    height: auto;
+}
+
+input {
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+button::after {
+    border: none;
+}
+
+/* 全局字体 */
+
+* {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.qpc-color-2 {
+    color: #fff;
+    text-shadow: 0 10rpx 35rpx #ffbbab !important;
+    font-weight: normal !important;
+    box-shadow: 0 5rpx 25rpx #ffbbab !important;
+    background-image: linear-gradient(336deg, #ff5d32, #ffc497) !important;
+}
+
+.qpc-color-2-1 {
+    color: #fff;
+    background-image: linear-gradient(336deg, #ff5d32, #ffc497) !important;
+}
+
+view {
+    box-sizing: border-box;
+}
+
+.color-gray {
+    color: #999;
+}
+
+.font-12 {
+    font-size: 24rpx;
+}
+.font-14 {
+    font-size: 28rpx;
+}
+
+.font-16 {
+    font-size: 32rpx;
+}
+
+.font-18 {
+    font-size: 36rpx;
+}
+
+.font-20 {
+    font-size: 40rpx;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.color-black {
+    color: #000;
+}
+
+.color-gray {
+    color: #ddd;
+}
+
+.color-red {
+    color: red;
+}

@@ -1,0 +1,13 @@
+/** @format */
+
+.ban {
+    width: 100%;
+    height: 300rpx;
+    margin: 42rpx 0 43rpx;
+}
+
+.swiper-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+}

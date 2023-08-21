@@ -1,0 +1,76 @@
+/* components/hotversion/hotversion.wxss */
+
+page {
+    /* font-family: "微软雅黑"; */
+}
+
+.container-hotversion {
+    /* display: flex; */
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.container-hotversion .onetap3 {
+    overflow: hidden;
+    border-bottom: 2rpx #f1f1f1 dotted;
+    padding: 15rpx 1%;
+    margin: 20rpx 5%;
+    border-radius: 25rpx;
+    box-shadow: 0 8rpx 20rpx rgba(186, 190, 192, 0.2);
+    display: inline-block;
+    width: 38%;
+    background-image: linear-gradient(300deg, #ffeff7, #fffcf8, #fffdfa, #fff) !important;
+}
+
+.pcl {
+    width: 150rpx;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pcl images {
+    width: auto;
+    max-width: 100%;
+    height: 120rpx;
+    border: 5rpx solid #fff;
+    border-radius: 100rpx;
+}
+
+.sec_tap4 {
+    width: 100%;
+    /* height: 205rpx; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.re_text1 {
+    /* margin-top: 53rpx; */
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.re_text2 {
+    /* margin-top: 10rpx; */
+    font-size: 25rpx;
+    color: #808080;
+}
+
+.re_text6 {
+    line-height: 1;
+    margin: 0 auto;
+    margin-top: 7% !important;
+    border-radius: 150rpx !important;
+    color: #fff4d1 !important;
+    text-shadow: 0 10rpx 35rpx #ffb5a3 !important;
+    font-weight: 900 !important;
+    box-shadow: 0 10rpx 35rpx #ffbbab !important;
+    background-image: linear-gradient(336deg, #ff5d32, #ffc497) !important;
+    font-size: 24rpx !important;
+    /* width: 200rpx; */
+    text-align: center;
+    padding: 7rpx 45rpx;
+}

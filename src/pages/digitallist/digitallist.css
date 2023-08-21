@@ -1,0 +1,97 @@
+page {
+    background: white;
+}
+
+.searchctl {
+    width: 90%;
+    margin-left: 5%;
+    background: #f3f3f3;
+    height: 64rpx;
+    border-radius: 30rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 26rpx;
+    color: #999999;
+    justify-content: center;
+}
+
+.container-ex {
+    width: 100%;
+    background-color: #fff;
+    min-height: 1000rpx;
+}
+
+.top-left {
+    width: 110rpx;
+    height: 110rpx;
+    margin-left: 30rpx;
+}
+
+.container-ex .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2rpx #f8f8f8 solid;
+    flex-wrap: nowrap;
+}
+
+.container-ex .navigation view {
+    font-weight: bolder;
+    font-size: 30rpx;
+    display: inline-block !important;
+    padding: 24rpx !important;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-content view {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24rpx;
+    position: relative;
+}
+
+.main-content view image {
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.main-content view text {
+    font-size: 24rpx;
+    color: #808080;
+}
+
+.active-mark {
+    height: 28rpx;
+    width: 130rpx !important;
+    background-color: #f33;
+    color: #fff3f3;
+    top: 32%;
+    right: 20%;
+    margin-right: 12rpx;
+    margin-top: 10rpx;
+    font-size: 21rpx;
+    position: absolute !important;
+    transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    /* IE 9 */
+    -moz-transform: rotate(15deg);
+    /* Firefox */
+    -webkit-transform: rotate(15deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(15deg);
+    border-top-left-radius: 40rpx;
+    border-top-right-radius: 90rpx;
+    box-shadow: 0 5rpx 5rpx #c1350b;
+}

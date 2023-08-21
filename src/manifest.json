@@ -1,0 +1,35 @@
+{
+	"name": "",
+	"appid": "",
+	"description": "",
+	"versionName": "1.0.0",
+	"versionCode": "100",
+	"transformPx": false,
+	"mp-weixin": {
+		"appid": "wx4174ac2bfe1ab419",
+		"lazyCodeLoading": "requiredComponents",
+		"requiredPrivateInfos": [
+			"chooseAddress"
+		],
+		"setting": {
+			"urlCheck": false,
+			"es6": true,
+			"postcss": true,
+			"minified": true
+		},
+		"optimization": {
+			"subPackages": true
+		}
+	},
+	"mp-alipay": {
+		"usingComponents": true
+	},
+	"uniStatistics": {
+		"enable": false
+	},
+	"vueVersion": "2",
+	"networkTimeout": {
+		"request": 20000,
+		"downloadFile": 10000
+	}
+}

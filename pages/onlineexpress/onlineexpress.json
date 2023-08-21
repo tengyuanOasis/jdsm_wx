@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "header-cmp": "/components/header/header",
-    "listmessage-cmp": "/components/listmessage/listmessage",
-      "kefu-cmp": "/components/kefuservice/kefuservice"
-  }
-}

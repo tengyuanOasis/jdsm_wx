@@ -1,0 +1,399 @@
+/**
+ * pages/placeorderpage/placeorderpage.wxss
+ *
+ * @format
+ */
+
+.header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100rpx;
+	background-color: #fff;
+	color: #000;
+	font-size: 40rpx;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+.price {
+	font-size: 30rpx;
+	font-weight: bold;
+}
+
+.container {
+	margin-top: 100rpx;
+	background-color: #f7f6fb;
+	padding: 20rpx 30rpx;
+}
+
+.chose-box {
+	width: 100%;
+	height: 200rpx;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	/* padding: 20rpx; */
+	padding-top: 20rpx;
+}
+
+.img1 {
+	width: 400rpx;
+}
+
+.img1 image {
+	width: 200rpx;
+	height: 180rpx;
+}
+
+/**表单部分样式开始**/
+
+.container .formClass {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 30rpx;
+	color: #333;
+}
+.container .formClass .order-box input {
+	background-color: white;
+}
+.formClass .order-box {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40rpx;
+	background-color: white;
+	border-radius: 20rpx;
+	margin-bottom: 20rpx;
+	padding: 30rpx 0;
+}
+
+.j-address input {
+	color: #999;
+}
+
+.formClass .j-province-city-county .picker {
+	width: 480rpx;
+	position: relative;
+}
+
+.j-province-city-county .picker image {
+	position: absolute;
+	right: 10rpx;
+	width: 48rpx;
+	height: 48rpx;
+}
+
+.formClass .j-phone {
+	background-color: #f1f1f1;
+}
+
+/**表单部分样式结束**/
+
+.placeholderStyle {
+	font-size: 24rpx;
+	color: #c5c5c5;
+}
+
+.section radio-group {
+	/* margin-top: 25rpx; */
+	margin-left: 25rpx;
+}
+
+.codeTipsBox {
+	width: 94%;
+	margin-top: 10rpx;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white !important;
+	height: 30rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.deal-way {
+	margin-left: 17rpx;
+	font-size: 26rpx;
+	color: #5a4a39;
+	font-weight: bolder;
+}
+
+.askImg {
+	width: 30rpx;
+	height: 30rpx;
+}
+
+.codeTipsText {
+	/* margin-top: -30rpx !important; */
+	padding: 10rpx;
+	/* background-color: #fbfbfb !important; */
+	color: #fa6334;
+	font-size: 26rpx;
+	background-color: white;
+}
+
+.recycleTips {
+	width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #a3a29e;
+	font-size: 26rpx;
+	padding: 20rpx;
+}
+
+.attention {
+	font-size: 32rpx;
+	color: #212123;
+	font-weight: bold;
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+}
+
+.littleTips {
+	font-size: 32rpx;
+	color: #212123;
+	font-weight: bold;
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+}
+
+.recycleTips view {
+	padding: 8rpx;
+}
+
+.title-line {
+	display: block;
+	position: relative;
+	width: 90%;
+	text-align: left;
+	color: #000;
+	float: left;
+	padding-left: 20rpx;
+	margin-top: 40rpx;
+	border-left: 14rpx solid #ffd22b;
+	/* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+	margin: 10rpx 0;
+	margin-bottom: 10rpx;
+}
+
+.count-title-left {
+	display: flex;
+	width: auto;
+	flex-direction: row;
+	align-items: center;
+}
+
+.featrue-name {
+	font-size: 32rpx;
+	font-weight: bold;
+}
+
+#myMap {
+	/* position: absolute; */
+	margin: 0 auto;
+	width: 95%;
+	height: 100rpx;
+	margin-top: 50rpx;
+}
+
+.recycleTips2 {
+	margin-top: 100rpx;
+}
+
+.normalQ {
+	font-size: 32rpx;
+	color: #4ba7ec;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 30rpx;
+	margin-top: 50rpx;
+	margin-bottom: 100rpx;
+}
+
+.getCodeBtn {
+	width: 160rpx;
+	padding: 18rpx 15rpx;
+	color: #fcb501;
+	font-size: 23rpx;
+	border-radius: 120rpx;
+	margin-left: 20rpx;
+	border: #fcb501 solid 2rpx;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.codeInput {
+	width: 190rpx !important;
+}
+
+/* 弹出层样式------------------ */
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	z-index: 9000;
+	opacity: 0.7;
+}
+
+.modalBox {
+	width: 630rpx;
+	height: 670rpx;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	z-index: 9999;
+	margin: -345rpx 60rpx;
+	background-color: #fff;
+	border-radius: 6rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.demoImg {
+	width: 400rpx;
+	height: 400rpx;
+}
+
+.outImg {
+	width: 50rpx;
+	height: 50rpx;
+	position: absolute;
+	right: -15rpx;
+	top: -15rpx;
+}
+
+.myModal-title {
+	padding-top: 25rpx;
+	font-size: 40rpx;
+	position: relative;
+	height: 80rpx;
+	width: 100%;
+	background-color: rgb(252, 207, 83);
+	text-align: center;
+	font-weight: bold;
+}
+
+.closeModalBtn {
+	margin-top: 50rpx;
+	color: rgb(252, 145, 83);
+	font-size: 30rpx;
+}
+
+.explain {
+	font-size: 26rpx;
+	padding: 15rpx;
+	color: rgb(143, 115, 76);
+}
+
+.agreeRules navigator {
+	color: #999999;
+}
+
+.footer {
+	width: 100%;
+	padding: 20rpx 40rpx;
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.agreeRules {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		justify-content: flex-start;
+		font-size: 25rpx;
+		color: gray;
+		
+		.checkbox {
+			width: 30rpx;
+			height: 30rpx;
+			margin-right: 10rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24rpx;
+			border: 1px solid #999999;
+			border-radius: 4rpx;
+			&.check {
+				border: none;
+				background-color: red;
+			}
+		}
+	}
+
+	.agreeRules image {
+		width: 28rpx;
+		height: 28rpx;
+	}
+
+	.count_btn {
+		width: 80%;
+		margin-top: 40rpx;
+		margin-bottom: 50rpx;
+		padding: 30rpx 20rpx;
+		background: red;
+		color: white;
+		font-weight: bold;
+		font-size: 27rpx;
+		border-radius: 30rpx;
+	}
+}
+
+.source-edit {
+	color: #ddd;
+	font-size: 24rpx;
+	display: inline-block;
+	margin-left: 10rpx;
+}
+
+.single-input {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	align-items: center;
+	padding: 20rpx;
+	margin-top: 10rpx;
+	border-bottom: #f1f1f1 2rpx solid;
+
+	.label {
+		text-align: right;
+		margin-right: 20rpx;
+		color: #000;
+		width: 170rpx;
+		font-weight: bold;
+	}
+	.form-value {
+		flex: 1;
+		font-size: 24rpx;
+		color: #9b9b9b;
+	}
+}
+.picker {
+	font-size: 24rpx;
+	color: #9b9b9b;
+	display: flex;
+	align-items: center;
+}
